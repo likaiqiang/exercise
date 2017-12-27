@@ -8,8 +8,8 @@ box.move()
 
 /*测试经纬度start*/
 
-var location = navigator.geolocation
-location.getCurrentPosition(function(position){
-    console.log(position.coords.latitude, position.coords.longitude)
-})
+// var location = navigator.geolocation
+// location.getCurrentPosition(function(position){
+//     console.log(position.coords.latitude, position.coords.longitude)
+// })
 /*测试经纬度end*/
