@@ -1,0 +1,14 @@
+$box_width:100px;
+$box_height:100px;
+$box_bg:yellowgreen;
+
+#root{
+    .box{
+        width: $box_width;
+        height: $box_height;
+        background-color: $box_bg;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+}
