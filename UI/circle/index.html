@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>circle-bar</title>
+    <style type="text/css">
+	    .pie {
+	        display: inline-block;
+	        width: 200px;
+	        height: 200px;
+	        border-radius: 50%;
+	        background: #ddd;
+	        margin: 0 auto;
+	        position: relative;
+	        background-image: linear-gradient(to right, transparent 50%, #3195d0 0);
+	    }
+
+	    .pie .circle {
+	        margin-left: 50%;
+	        height: 100%;
+	        background-color: inherit;
+	        border-radius: 0 100% 100% 0 / 50%;
+	        transform-origin: left;
+	        transform: rotate(45deg);
+	        animation: spin 10s linear infinite,
+	        bg 20s step-end infinite;
+	    }
+
+	    .pie::after {
+	        content: '';
+	        display: block;
+	        height: 80%;
+	        width: 80%;
+	        position: absolute;
+	        z-index: 1;
+	        top: 10%;
+	        left: 10%;
+	        background-color: #fff;
+	        border-radius: 50%;
+	    }
+    </style>
+</head>
+
+<body>
+    <div class="pie" id="pie">
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>
