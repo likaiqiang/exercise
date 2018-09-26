@@ -34,8 +34,7 @@
         $('#postMessage').addEventListener('click',function(){
             wx.miniProgram.postMessage({
                 data:{
-                    a:1,
-                    b:2
+                    url:document.location.href
                 }
             })
         })
