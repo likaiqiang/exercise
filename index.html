@@ -16,7 +16,7 @@
             <button id="navigateBack">navigateBack</button>
             <button id="navigateTo">navigateTo index</button>
             <button id="reLaunch">reLaunch</button>
-            <button id="redirectTo">redirectTo</button>
+            <button id="redirectTo">redirectTo index</button>
             <button id="switchTab">switchTab</button>
         </div>
     </div>
@@ -43,9 +43,9 @@
             wx.miniProgram.navigateBack()
         })
 
-        $('#navigateTo').addEventListener('click',function(){
+        $('#redirectTo').addEventListener('click',function(){
         
-            wx.miniProgram.navigateTo({
+            wx.miniProgram.redirectTo({
                 url:'/pages/welcome/welcome'
             })
         })
