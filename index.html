@@ -22,7 +22,7 @@
     </div>
     <script>
         var $ = function(selector){
-            id(typeof selector == 'string'){
+            if(typeof selector == 'string'){
                 return document.querySelector(selector)
             }
             else return false
