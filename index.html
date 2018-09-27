@@ -62,16 +62,7 @@
             }
             else return false
         }
-        $('#getEnv').addEventListener('click',function(){
-            console.log( wx.miniProgram.getEnv() )
-        })
-        $('#postMessage').addEventListener('click',function(){
-            wx.miniProgram.postMessage({
-                data:{
-                    url:document.location.href
-                }
-            })
-        })
+       
 	    
 	$('#nav').addEventListener('click',function(){
 		wx.miniProgram.navigateTo({
