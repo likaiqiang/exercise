@@ -50,8 +50,7 @@
 	</div>
 </article>
         <div>
-            <button id="getEnv">getEnv</button>
-            <button id="postMessage">postMessage</button>
+            <button id="nav">navigator<button>
             
         </div>
         <img id="avater" src="https://cdn.pixabay.com/photo/2018/04/29/20/28/wave-3361029__340.jpg" >
@@ -73,14 +72,14 @@
                 }
             })
         })
-        window.onload = function(){
-            wx.miniProgram.postMessage({
-                data:{
-                    title:'我是来自webview的title',
-                    img:$('#avater').src
-                }
-            })
-        }
+	    
+	$('#nav').addEventListener('click',function(){
+		wx.miniProgram.navigateTo({
+			url:'/pages/logs/logs'
+		})
+	})
+	
+        
         
     </script>
 </body>
