@@ -65,8 +65,14 @@
        
 	    
 	$('#nav').addEventListener('click',function(){
-		wx.miniProgram.navigateTo({
-			url:'/pages/logs/logs'
+		wx.miniProgram.postMessage({
+			data:{
+				a:1,
+				b:2
+			}
+		})
+		wx.miniProgram.redirectTo({
+			url:'/pages/blank/blank'
 		})
 	})
 	
